@@ -1,0 +1,9 @@
+target/
+*.db
+*.sqlite
+*.sqlite3
+.git
+.gitignore
+.vscode
+.idea
+*.log
