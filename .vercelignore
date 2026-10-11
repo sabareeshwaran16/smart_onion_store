@@ -1,0 +1,10 @@
+# Exclude non-frontend directories and Python files from Vercel deployments
+ai
+backend
+dataset
+research
+src
+dashboard
+requirements.txt
+vengai.db
+*.db
