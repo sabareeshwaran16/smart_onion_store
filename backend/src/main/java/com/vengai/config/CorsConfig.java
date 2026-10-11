@@ -19,7 +19,7 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 String[] origins = corsOrigins.split(",");
                 registry.addMapping("/**")
-                    .allowedOriginPatterns("http://localhost:*", "http://127.0.0.1:*")
+                    .allowedOriginPatterns("http://localhost:*", "http://127.0.0.1:*", "https://*.onrender.com", "https://*.vercel.app", "https://*.netlify.app")
                     .allowedOrigins(origins)
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
                     .allowedHeaders("*")
