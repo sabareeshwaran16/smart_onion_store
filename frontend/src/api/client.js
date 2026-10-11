@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const rawBaseUrl = import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_URL || 'https://smart-onion-store.onrender.com';
+const defaultBaseUrl = import.meta.env.DEV ? 'http://localhost:8080' : 'https://smart-onion-store.onrender.com';
+const rawBaseUrl = import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_URL || defaultBaseUrl;
 const BASE_URL = rawBaseUrl.replace(/\/+$/, '');
 
 const api = axios.create({
